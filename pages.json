@@ -1,0 +1,56 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+        {
+        	"path": "pages/main/home",
+        	"style": {
+        		"navigationBarTitleText": "首页"
+        	}
+        },
+        {
+        	"path": "pages/main/room",
+        	"style": {
+        		"navigationBarTitleText": "房间"
+        	}
+        },
+        {
+        	"path": "pages/main/person",
+        	"style": {
+        		"navigationBarTitleText": "个人"
+        	}
+        }
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+    "tabBar": {
+    	"color": "#7A7E83",
+    	"selectedColor": "#28a6f0",
+    	"borderStyle": "black",
+    	"backgroundColor": "#F8F8F8",
+    	"list": [{
+    		"pagePath": "pages/main/home",
+    		"iconPath": "static/tabBar/home.png",
+    		"selectedIconPath": "static/tabBar/homeHL.png",
+    		"text": "首页"
+    	}, {
+    		"pagePath": "pages/main/room",
+    		"iconPath": "static/tabbar/room.png",
+    		"selectedIconPath": "static/tabbar/roomHL.png",
+    		"text": "房间"
+    	}, {
+    		"pagePath": "pages/main/person",
+    		"iconPath": "static/tabBar/person.png",
+    		"selectedIconPath": "static/tabBar/personHL.png",
+    		"text": "我的"
+    	}]
+    }
+}
