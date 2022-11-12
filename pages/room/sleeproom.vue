@@ -1,5 +1,6 @@
 <template>
-    <view class='room-container'>
+    <view class='room-container' 
+        @touchstart='tstart' @touchend='tend' @touchmove='tmove'>
         <image class="room-image" src="../../static/room/inroom-background.png">
             
         </image>
@@ -7,6 +8,19 @@
 </template>
 
 <script>
+    export default {
+        data (){
+            return {
+                positionX:'',
+                positionY:'',
+            }
+        },
+        methods:{
+            tstart(e){
+                console.log(e)
+            }
+        }
+    }
 </script>
 
 <style>

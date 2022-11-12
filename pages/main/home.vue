@@ -1,7 +1,7 @@
 <template>
         <view class='home-container'>
             <view class='imgbox'>
-                <image class='home-img' src="../../static/home/6.png">
+                <image class='home-img' src="../../static/home/home-background.png">
                 </image>
             </view>
             <view class='txtbox'>
@@ -33,8 +33,6 @@
     .imgbox{
         display: flex;
         flex: 8;
-        justify-content: center;
-        align-items: center;
     },
     .home-img{
         height: 100%;
