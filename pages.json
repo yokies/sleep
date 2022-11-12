@@ -17,6 +17,12 @@
         	"style": {
         		"navigationBarTitleText": "个人"
         	}
+        },
+        {
+        	"path": "pages/room/sleeproom",
+        	"style": {
+        		"navigationBarTitleText": "房间内"
+        	}
         }
 	],
 	"globalStyle": {
