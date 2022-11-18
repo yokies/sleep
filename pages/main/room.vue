@@ -25,7 +25,6 @@
     .room-container{
         height: 100%;
         width: 100%;
-        background-color: #0066CC;
     },
     .room-image{
         position: fixed;

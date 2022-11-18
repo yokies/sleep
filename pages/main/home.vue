@@ -27,12 +27,12 @@
         width: 100%;
     },
     .txtbox{
-        flex: 2;
+        flex: 3;
         margin: 5px 30px;
     },
     .imgbox{
         display: flex;
-        flex: 8;
+        flex: 7;
     },
     .home-img{
         height: 100%;
