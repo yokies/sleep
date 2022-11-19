@@ -1,12 +1,4 @@
 <template>
-</template>
-
-<script>
-</script>
-
-<style>
-</style>
-<template>
 	<view>
 		<!-- #ifdef APP-PLUS -->
 		<!-- #endif -->
