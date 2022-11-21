@@ -1476,7 +1476,7 @@ var render = function() {
               _c(
                 "v-uni-text",
                 { staticClass: _vm._$g(10, "sc"), attrs: { _i: 10 } },
-                [_vm._v("已生成您的虚拟形象")]
+                [_vm._v("已生成您的头像")]
               ),
               _c(
                 "uni-view",
@@ -1503,6 +1503,276 @@ var render = function() {
                   }
                 },
                 [_vm._v("取消")]
+              )
+            ],
+            1
+          )
+        : _vm._$g(13, "e")
+        ? _c(
+            "uni-view",
+            { staticClass: _vm._$g(13, "sc"), attrs: { _i: 13 } },
+            [
+              _c(
+                "uni-view",
+                {
+                  staticClass: _vm._$g(14, "sc"),
+                  attrs: { _i: 14 },
+                  on: {
+                    click: function($event) {
+                      return _vm.$handleViewEvent($event)
+                    }
+                  }
+                },
+                [
+                  _c("v-uni-image", {
+                    staticClass: _vm._$g(15, "sc"),
+                    attrs: { src: _vm._$g(15, "a-src"), _i: 15 }
+                  })
+                ],
+                1
+              ),
+              _c(
+                "uni-view",
+                {
+                  staticClass: _vm._$g(16, "sc"),
+                  attrs: { _i: 16 },
+                  on: {
+                    click: function($event) {
+                      return _vm.$handleViewEvent($event)
+                    }
+                  }
+                },
+                [
+                  _c("v-uni-image", {
+                    staticClass: _vm._$g(17, "sc"),
+                    attrs: { src: _vm._$g(17, "a-src"), _i: 17 }
+                  })
+                ],
+                1
+              ),
+              _c(
+                "uni-view",
+                { staticClass: _vm._$g(18, "sc"), attrs: { _i: 18 } },
+                [
+                  _c("v-uni-image", {
+                    staticClass: _vm._$g(19, "sc"),
+                    attrs: { src: _vm._$g(19, "a-src"), _i: 19 }
+                  })
+                ],
+                1
+              ),
+              _c(
+                "uni-view",
+                {
+                  staticClass: _vm._$g(20, "sc"),
+                  staticStyle: { left: "45rpx" },
+                  attrs: { _i: 20 }
+                },
+                [
+                  _vm._$g(21, "i")
+                    ? _c(
+                        "v-uni-text",
+                        { staticClass: _vm._$g(21, "sc"), attrs: { _i: 21 } },
+                        [_vm._v("服饰")]
+                      )
+                    : _c(
+                        "v-uni-text",
+                        {
+                          staticClass: _vm._$g(22, "sc"),
+                          attrs: { _i: 22 },
+                          on: {
+                            click: function($event) {
+                              return _vm.$handleViewEvent($event)
+                            }
+                          }
+                        },
+                        [_vm._v("服饰")]
+                      )
+                ],
+                1
+              ),
+              _c(
+                "uni-view",
+                {
+                  staticClass: _vm._$g(23, "sc"),
+                  staticStyle: { left: "210rpx" },
+                  attrs: { _i: 23 }
+                },
+                [
+                  _vm._$g(24, "i")
+                    ? _c(
+                        "v-uni-text",
+                        { staticClass: _vm._$g(24, "sc"), attrs: { _i: 24 } },
+                        [_vm._v("配饰")]
+                      )
+                    : _c(
+                        "v-uni-text",
+                        {
+                          staticClass: _vm._$g(25, "sc"),
+                          attrs: { _i: 25 },
+                          on: {
+                            click: function($event) {
+                              return _vm.$handleViewEvent($event)
+                            }
+                          }
+                        },
+                        [_vm._v("配饰")]
+                      )
+                ],
+                1
+              ),
+              _c(
+                "uni-view",
+                {
+                  staticClass: _vm._$g(26, "sc"),
+                  staticStyle: { left: "375rpx" },
+                  attrs: { _i: 26 }
+                },
+                [
+                  _vm._$g(27, "i")
+                    ? _c(
+                        "v-uni-text",
+                        { staticClass: _vm._$g(27, "sc"), attrs: { _i: 27 } },
+                        [_vm._v("特效")]
+                      )
+                    : _c(
+                        "v-uni-text",
+                        {
+                          staticClass: _vm._$g(28, "sc"),
+                          attrs: { _i: 28 },
+                          on: {
+                            click: function($event) {
+                              return _vm.$handleViewEvent($event)
+                            }
+                          }
+                        },
+                        [_vm._v("特效")]
+                      )
+                ],
+                1
+              ),
+              _c(
+                "uni-view",
+                {
+                  staticClass: _vm._$g(29, "sc"),
+                  staticStyle: { left: "540rpx" },
+                  attrs: { _i: 29 }
+                },
+                [
+                  _vm._$g(30, "i")
+                    ? _c(
+                        "v-uni-text",
+                        { staticClass: _vm._$g(30, "sc"), attrs: { _i: 30 } },
+                        [_vm._v("道具")]
+                      )
+                    : _c(
+                        "v-uni-text",
+                        {
+                          staticClass: _vm._$g(31, "sc"),
+                          attrs: { _i: 31 },
+                          on: {
+                            click: function($event) {
+                              return _vm.$handleViewEvent($event)
+                            }
+                          }
+                        },
+                        [_vm._v("道具")]
+                      )
+                ],
+                1
+              ),
+              _c(
+                "uni-view",
+                { staticClass: _vm._$g(32, "sc"), attrs: { _i: 32 } },
+                [
+                  _vm._$g(33, "i")
+                    ? _c(
+                        "uni-view",
+                        { staticClass: _vm._$g(33, "sc"), attrs: { _i: 33 } },
+                        [_vm._v("服饰列表……")]
+                      )
+                    : _vm._e(),
+                  _vm._$g(34, "i")
+                    ? _c(
+                        "uni-view",
+                        { staticClass: _vm._$g(34, "sc"), attrs: { _i: 34 } },
+                        [_vm._v("配饰列表……")]
+                      )
+                    : _vm._e(),
+                  _vm._$g(35, "i")
+                    ? _c(
+                        "uni-view",
+                        { staticClass: _vm._$g(35, "sc"), attrs: { _i: 35 } },
+                        [_vm._v("特效列表……")]
+                      )
+                    : _vm._e(),
+                  _vm._$g(36, "i")
+                    ? _c(
+                        "uni-view",
+                        { staticClass: _vm._$g(36, "sc"), attrs: { _i: 36 } },
+                        [_vm._v("道具列表……")]
+                      )
+                    : _vm._e()
+                ],
+                1
+              )
+            ],
+            1
+          )
+        : _vm._e(),
+      _vm._$g(37, "i")
+        ? _c(
+            "uni-view",
+            { staticClass: _vm._$g(37, "sc"), attrs: { _i: 37 } },
+            [
+              _c(
+                "uni-view",
+                { staticClass: _vm._$g(38, "sc"), attrs: { _i: 38 } },
+                [
+                  _c("v-uni-image", {
+                    staticClass: _vm._$g(39, "sc"),
+                    attrs: { src: _vm._$g(39, "a-src"), _i: 39 }
+                  })
+                ],
+                1
+              ),
+              _c(
+                "v-uni-text",
+                { staticClass: _vm._$g(40, "sc"), attrs: { _i: 40 } },
+                [_vm._v("您的虚拟形象已形成！")]
+              ),
+              _c(
+                "uni-view",
+                {
+                  staticClass: _vm._$g(41, "sc"),
+                  attrs: { _i: 41 },
+                  on: {
+                    click: function($event) {
+                      return _vm.$handleViewEvent($event)
+                    }
+                  }
+                },
+                [_vm._v("OK")]
+              )
+            ],
+            1
+          )
+        : _vm._e(),
+      _vm._$g(42, "i")
+        ? _c(
+            "uni-view",
+            { staticClass: _vm._$g(42, "sc"), attrs: { _i: 42 } },
+            [
+              _c(
+                "uni-view",
+                { staticClass: _vm._$g(43, "sc"), attrs: { _i: 43 } },
+                [
+                  _c("v-uni-image", {
+                    staticClass: _vm._$g(44, "sc"),
+                    attrs: { src: _vm._$g(44, "a-src"), _i: 44 }
+                  })
+                ],
+                1
               )
             ],
             1
@@ -1601,7 +1871,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 10);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.person-background {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\n}\n.photo-collection .pic-box {\r\n  position: absolute;\r\n  width: 600rpx;\r\n  height: 700rpx;\r\n  left: 75rpx;\r\n  top: 250rpx;\r\n  background-color: #D9D9D9;\n}\n.photo-collection .title {\r\n  position: absolute;\r\n  text-align: center;\r\n  font-weight: bold;\r\n  font-size: 60rpx;\r\n  top: 7%;\r\n  width: 500rpx;\r\n  left: 125rpx;\n}\n.photo-collection .button {\r\n  position: absolute;\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  left: 315rpx;\r\n  bottom: 200rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-collection .button .icon {\r\n  left: 20rpx;\r\n  top: 20rpx;\r\n  width: 80rpx;\r\n  height: 80rpx;\n}\n.photo-transfer .msg-text {\r\n  position: absolute;\r\n  text-align: center;\r\n  font-weight: bold;\r\n  font-size: 45rpx;\r\n  top: 72%;\r\n  width: 550rpx;\r\n  left: 100rpx;\n}\n.photo-transfer .pic-box {\r\n  position: absolute;\r\n  width: 600rpx;\r\n  height: 800rpx;\r\n  left: 75rpx;\r\n  top: 130rpx;\r\n  background-color: white;\n}\n.photo-transfer .pic-box .picture {\r\n  width: 600rpx;\r\n  height: 800rpx;\n}\n.photo-transfer .adopt-button {\r\n  position: absolute;\r\n  width: 200rpx;\r\n  height: 100rpx;\r\n  left: 150rpx;\r\n  bottom: 175rpx;\r\n  text-align: center;\r\n  line-height: 100rpx;\r\n  font-size: 40rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-transfer .cancel-button {\r\n  position: absolute;\r\n  width: 200rpx;\r\n  height: 100rpx;\r\n  left: 400rpx;\r\n  bottom: 175rpx;\r\n  text-align: center;\r\n  line-height: 100rpx;\r\n  font-size: 40rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.person-background {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\n}\n.photo-collection .pic-box {\r\n  position: absolute;\r\n  width: 600rpx;\r\n  height: 700rpx;\r\n  left: 75rpx;\r\n  top: 250rpx;\r\n  background-color: #D9D9D9;\n}\n.photo-collection .title {\r\n  position: absolute;\r\n  text-align: center;\r\n  font-weight: bold;\r\n  color: #FFFFFF;\r\n  font-size: 60rpx;\r\n  top: 7%;\r\n  width: 500rpx;\r\n  left: 125rpx;\n}\n.photo-collection .button {\r\n  position: absolute;\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  left: 315rpx;\r\n  bottom: 200rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-collection .button .icon {\r\n  left: 20rpx;\r\n  top: 20rpx;\r\n  width: 80rpx;\r\n  height: 80rpx;\n}\n.photo-transfer .msg-text {\r\n  position: absolute;\r\n  text-align: center;\r\n  font-weight: bold;\r\n  font-size: 50rpx;\r\n  top: 8%;\r\n  width: 550rpx;\r\n  left: 100rpx;\r\n  color: #FFFFFF;\n}\n.photo-transfer .pic-box {\r\n  position: absolute;\r\n  width: 600rpx;\r\n  height: 800rpx;\r\n  left: 75rpx;\r\n  top: 230rpx;\r\n  background: white;\r\n  border-radius: 30rpx;\n}\n.photo-transfer .pic-box .picture {\r\n  width: 600rpx;\r\n  height: 850rpx;\n}\n.photo-transfer .next-button {\r\n  position: absolute;\r\n  width: 200rpx;\r\n  height: 100rpx;\r\n  left: 150rpx;\r\n  bottom: 175rpx;\r\n  text-align: center;\r\n  line-height: 100rpx;\r\n  font-size: 40rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-transfer .cancel-button {\r\n  position: absolute;\r\n  width: 200rpx;\r\n  height: 100rpx;\r\n  left: 400rpx;\r\n  bottom: 175rpx;\r\n  text-align: center;\r\n  line-height: 100rpx;\r\n  font-size: 40rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-transfer .adopt-button {\r\n  position: absolute;\r\n  width: 200rpx;\r\n  height: 100rpx;\r\n  left: 275rpx;\r\n  bottom: 175rpx;\r\n  text-align: center;\r\n  line-height: 100rpx;\r\n  font-size: 40rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-transfer .next-view {\r\n  position: absolute;\r\n  right: 0rpx;\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  background: #D9D9D9;\n}\n.photo-transfer .next-view .icon-next {\r\n  position: absolute;\r\n  right: 30rpx;\r\n  top: 50rpx;\r\n  width: 60rpx;\r\n  height: 60rpx;\n}\n.photo-transfer .next-view .icon-next .full-view {\r\n  height: 100%;\r\n  width: 100%;\n}\n.photo-transfer .back-view {\r\n  position: absolute;\r\n  left: 0rpx;\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  background: #D9D9D9;\n}\n.photo-transfer .back-view .icon-back {\r\n  position: absolute;\r\n  left: 30rpx;\r\n  top: 50rpx;\r\n  width: 60rpx;\r\n  height: 60rpx;\r\n  background: #D9D9D9;\n}\n.photo-transfer .back-view .icon-back .full-view {\r\n  height: 100%;\r\n  width: 100%;\n}\n.photo-transfer .online-display {\r\n  position: absolute;\r\n  top: 30rpx;\r\n  width: 100%;\r\n  height: 45%;\n}\n.photo-transfer .online-display .overall-display {\r\n  display: block;\r\n  margin: 0 auto;\r\n  padding-right: 30rpx;\r\n  width: 450rpx;\r\n  height: 700rpx;\n}\n.photo-transfer .trapezoid {\r\n  position: absolute;\r\n  bottom: 45%;\r\n  left: 45rpx;\r\n  width: 105rpx;\r\n  height: 0rpx;\r\n  border-bottom: 60rpx solid;\r\n  border-left: 30rpx solid;\r\n  border-right: 30rpx solid;\r\n  border-color: transparent transparent #F0F0F0 transparent;\n}\n.photo-transfer .trapezoid .title {\r\n  line-height: 60rpx;\r\n  font-size: 36rpx;\r\n  padding-left: 15rpx;\n}\n.photo-transfer .trapezoid .title-bold {\r\n  line-height: 60rpx;\r\n  font-size: 36rpx;\r\n  padding-left: 15rpx;\r\n  font-weight: bold;\n}\n.photo-transfer .component-columns {\r\n  position: absolute;\r\n  top: 55%;\r\n  width: 100%;\r\n  height: 1000rpx;\r\n  border-radius: 30rpx;\r\n  background: #F8F8F8;\n}\n.photo-transfer .component-columns .components {\r\n  width: 100%;\r\n  height: 500rpx;\r\n  text-align: center;\r\n  font-size: 40rpx;\r\n  line-height: 300rpx;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
