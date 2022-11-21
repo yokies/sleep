@@ -8,8 +8,8 @@
 </template>
 
 <script>
-    export default{
-        onShow(){
+    export default {
+        onShow() {
             setTimeout(()=>{
                 uni.switchTab({
                     url:'../main/home'
