@@ -16,11 +16,11 @@
         <image class="room-image" src="../../static/room/room-background.png">
             
         </image>
-        <button type="primary" class="tip-button" @click="show_tip">
-            什么是Sleep House？
+        <button class="tip-button" @click="show_tip">
+            <view style="color: #FFFFFF;">什么是Sleep House？</view>
         </button>   
-        <button type="primary" class="room-button" @click="visit_room">
-            进入Sleep House
+        <button class="room-button" @click="visit_room">
+            <view style="color: #FFFFFF;">进入Sleep House</view>
         </button>   
     </view>
 </template>
@@ -29,7 +29,7 @@
     export default {
         data(){
             return {
-                showTip: true
+                showTip: false
             }
         },
         methods: {
