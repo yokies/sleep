@@ -1002,33 +1002,46 @@ var render = function() {
         [
           _c(
             "uni-view",
-            { attrs: { _i: 4 } },
+            { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
             [
               _c(
-                "h2",
+                "uni-view",
                 {
-                  staticStyle: { "margin-bottom": "20px", color: "" },
+                  staticStyle: { "font-size": "26px", color: "#9C9C9C" },
                   attrs: { _i: 5 }
                 },
-                [_vm._v("北航早睡")]
+                [_vm._v(_vm._$g(5, "t0-0"))]
+              ),
+              _c(
+                "uni-view",
+                {
+                  staticStyle: {
+                    "font-size": "26px",
+                    color: "#838ABD",
+                    "margin-left": "30px"
+                  },
+                  attrs: { _i: 6 }
+                },
+                [_vm._v(_vm._$g(6, "t0-0"))]
               )
             ],
             1
           ),
           _c(
             "uni-view",
-            { attrs: { _i: 6 } },
+            { staticClass: _vm._$g(7, "sc"), attrs: { _i: 7 } },
+            [_c("v-uni-text", { attrs: { _i: 8 } }, [_vm._v("Sleep House")])],
+            1
+          ),
+          _c(
+            "uni-view",
+            { attrs: { _i: 9 } },
             [
-              _c(
-                "v-uni-text",
-                { staticStyle: { "font-size": "large" }, attrs: { _i: 7 } },
-                [
-                  _vm._v("欢迎来到北航早睡app"),
-                  _c("br", { attrs: { _i: 8 } }),
-                  _vm._v("这里还要加点什么呢")
-                ],
-                1
-              )
+              _c("v-uni-text", { attrs: { clss: "text", _i: 10 } }, [
+                _vm._v(
+                  "欢迎来到北航早睡社区，我们希望每一位北航同学都能够获得高质量睡眠，在这里您可以获得有趣的睡眠体验。"
+                )
+              ])
             ],
             1
           )
@@ -1128,7 +1141,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 10);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n.home-container{\n    display: flex;\n    justify-content: space-between;\n    flex-direction: column;\n    height: 100%;\n    width: 100%;\n}.txtbox{\n    flex: 3;\n    margin: 5px 30px;\n}.imgbox{\n    display: flex;\n    flex: 7;\n}.home-img{\n    height: 100%;\n    width: 100%;\n}\n", ""]);
+exports.push([module.i, "\n.home-container{\n    display: flex;\n    justify-content: space-between;\n    flex-direction: column;\n    height: 100%;\n    width: 100%;\n}.timebox{\n    display: flex;\n    align-items: center;\n}.txtbox{\n    flex: 3;\n    margin: 5px 30px;\n}.imgbox{\n    display: flex;\n    flex: 7;\n}.home-img{\n    height: 100%;\n    width: 100%;\n}.title{\n    margin-top: 8px;\n    margin-bottom: 10px;\n    font-size: 24px;\n    font-weight: 500;\n}.text{\n    font-size: normal;\n    line-height: 24px;\n    font-size: 16px;\n    font-weight: 400;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -1217,22 +1230,69 @@ var render = function() {
     "uni-view",
     { staticClass: _vm._$g(0, "sc"), attrs: { _i: 0 } },
     [
+      _vm._$g(1, "i")
+        ? _c(
+            "uni-view",
+            { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } },
+            [
+              _c(
+                "uni-view",
+                { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
+                [
+                  _c(
+                    "uni-view",
+                    { staticClass: _vm._$g(3, "sc"), attrs: { _i: 3 } },
+                    [_vm._v("什么是Sleep House？")]
+                  ),
+                  _c(
+                    "uni-view",
+                    { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
+                    [
+                      _vm._v(
+                        "“Sleep House”是一个将您的睡眠状态进行实时可视化的圈子。在这里您可以在虚拟的Sleep House中获得有趣的体验～"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _c("uni-view", {
+                staticClass: _vm._$g(5, "sc"),
+                attrs: { _i: 5 }
+              })
+            ],
+            1
+          )
+        : _vm._e(),
       _c("v-uni-image", {
-        staticClass: _vm._$g(1, "sc"),
-        attrs: { src: _vm._$g(1, "a-src"), _i: 1 }
+        staticClass: _vm._$g(6, "sc"),
+        attrs: { src: _vm._$g(6, "a-src"), _i: 6 }
       }),
       _c(
         "v-uni-button",
         {
-          staticClass: _vm._$g(2, "sc"),
-          attrs: { type: "primary", _i: 2 },
+          staticClass: _vm._$g(7, "sc"),
+          attrs: { type: "primary", _i: 7 },
           on: {
             click: function($event) {
               return _vm.$handleViewEvent($event)
             }
           }
         },
-        [_vm._v("进入房间")]
+        [_vm._v("什么是Sleep House？")]
+      ),
+      _c(
+        "v-uni-button",
+        {
+          staticClass: _vm._$g(8, "sc"),
+          attrs: { type: "primary", _i: 8 },
+          on: {
+            click: function($event) {
+              return _vm.$handleViewEvent($event)
+            }
+          }
+        },
+        [_vm._v("进入Sleep House")]
       )
     ],
     1
@@ -1327,7 +1387,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 10);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\n.room-container{\n    height: 100%;\n    width: 100%;\n}.room-image{\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: -1;\n}.room-button{\n    position: absolute;\n    bottom: 10%;\n    left: 15%;\n    width: 70%;\n}\n", ""]);
+exports.push([module.i, "\n.room-container{\n    height: 100%;\n    width: 100%;\n}.room-image{\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: -1;\n}.tip-button{\n    position: absolute;\n    bottom: 20%;\n    left: 15%;\n    width: 70%;\n    background-color: #899BF1;\n}.room-button{\n    position: absolute;\n    bottom: 10%;\n    left: 15%;\n    width: 70%;\n    background-color: #899BF1;\n}.tip{\n    background-color: #899BF1;\n    border-radius: 20px;\n    position: absolute;\n    bottom: 35%;\n    left: 10%;\n    width: 80%;\n    height: 50%;\n}.tip-text{\n    height: 80%;\n}.triangle {\n    border-left: 50px solid transparent;\n    border-right: 50px solid transparent;\n    border-top: 50px solid #899BF1;\n    border-radius: 6rpx;\n    width: 1px;\n    margin-left: 35%;\n}.title{\n    text-align: center;\n    color: #FFFFFF;\n    font-size: 22px;\n    font-weight: 500;\n    margin-top: 15%;\n}.text{\n    text-align: left;\n    color: #FFFFFF;\n    font-size: 18px;\n    font-weight: 400;\n    margin-top: 20px;\n    margin-left: 25px;\n    margin-right: 25px;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -1773,6 +1833,32 @@ var render = function() {
                   })
                 ],
                 1
+              ),
+              _c(
+                "uni-view",
+                {
+                  staticClass: _vm._$g(45, "sc"),
+                  attrs: { _i: 45 },
+                  on: {
+                    click: function($event) {
+                      return _vm.$handleViewEvent($event)
+                    }
+                  }
+                },
+                [_vm._v("重新拍照")]
+              ),
+              _c(
+                "uni-view",
+                {
+                  staticClass: _vm._$g(46, "sc"),
+                  attrs: { _i: 46 },
+                  on: {
+                    click: function($event) {
+                      return _vm.$handleViewEvent($event)
+                    }
+                  }
+                },
+                [_vm._v("更换配件")]
               )
             ],
             1
@@ -1871,7 +1957,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 10);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.person-background {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\n}\n.photo-collection .pic-box {\r\n  position: absolute;\r\n  width: 600rpx;\r\n  height: 700rpx;\r\n  left: 75rpx;\r\n  top: 250rpx;\r\n  background-color: #D9D9D9;\n}\n.photo-collection .title {\r\n  position: absolute;\r\n  text-align: center;\r\n  font-weight: bold;\r\n  color: #FFFFFF;\r\n  font-size: 60rpx;\r\n  top: 7%;\r\n  width: 500rpx;\r\n  left: 125rpx;\n}\n.photo-collection .button {\r\n  position: absolute;\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  left: 315rpx;\r\n  bottom: 200rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-collection .button .icon {\r\n  left: 20rpx;\r\n  top: 20rpx;\r\n  width: 80rpx;\r\n  height: 80rpx;\n}\n.photo-transfer .msg-text {\r\n  position: absolute;\r\n  text-align: center;\r\n  font-weight: bold;\r\n  font-size: 50rpx;\r\n  top: 8%;\r\n  width: 550rpx;\r\n  left: 100rpx;\r\n  color: #FFFFFF;\n}\n.photo-transfer .pic-box {\r\n  position: absolute;\r\n  width: 600rpx;\r\n  height: 800rpx;\r\n  left: 75rpx;\r\n  top: 230rpx;\r\n  background: white;\r\n  border-radius: 30rpx;\n}\n.photo-transfer .pic-box .picture {\r\n  width: 600rpx;\r\n  height: 850rpx;\n}\n.photo-transfer .next-button {\r\n  position: absolute;\r\n  width: 200rpx;\r\n  height: 100rpx;\r\n  left: 150rpx;\r\n  bottom: 175rpx;\r\n  text-align: center;\r\n  line-height: 100rpx;\r\n  font-size: 40rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-transfer .cancel-button {\r\n  position: absolute;\r\n  width: 200rpx;\r\n  height: 100rpx;\r\n  left: 400rpx;\r\n  bottom: 175rpx;\r\n  text-align: center;\r\n  line-height: 100rpx;\r\n  font-size: 40rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-transfer .adopt-button {\r\n  position: absolute;\r\n  width: 200rpx;\r\n  height: 100rpx;\r\n  left: 275rpx;\r\n  bottom: 175rpx;\r\n  text-align: center;\r\n  line-height: 100rpx;\r\n  font-size: 40rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-transfer .next-view {\r\n  position: absolute;\r\n  right: 0rpx;\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  background: #D9D9D9;\n}\n.photo-transfer .next-view .icon-next {\r\n  position: absolute;\r\n  right: 30rpx;\r\n  top: 50rpx;\r\n  width: 60rpx;\r\n  height: 60rpx;\n}\n.photo-transfer .next-view .icon-next .full-view {\r\n  height: 100%;\r\n  width: 100%;\n}\n.photo-transfer .back-view {\r\n  position: absolute;\r\n  left: 0rpx;\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  background: #D9D9D9;\n}\n.photo-transfer .back-view .icon-back {\r\n  position: absolute;\r\n  left: 30rpx;\r\n  top: 50rpx;\r\n  width: 60rpx;\r\n  height: 60rpx;\r\n  background: #D9D9D9;\n}\n.photo-transfer .back-view .icon-back .full-view {\r\n  height: 100%;\r\n  width: 100%;\n}\n.photo-transfer .online-display {\r\n  position: absolute;\r\n  top: 30rpx;\r\n  width: 100%;\r\n  height: 45%;\n}\n.photo-transfer .online-display .overall-display {\r\n  display: block;\r\n  margin: 0 auto;\r\n  padding-right: 30rpx;\r\n  width: 450rpx;\r\n  height: 700rpx;\n}\n.photo-transfer .trapezoid {\r\n  position: absolute;\r\n  bottom: 45%;\r\n  left: 45rpx;\r\n  width: 105rpx;\r\n  height: 0rpx;\r\n  border-bottom: 60rpx solid;\r\n  border-left: 30rpx solid;\r\n  border-right: 30rpx solid;\r\n  border-color: transparent transparent #F0F0F0 transparent;\n}\n.photo-transfer .trapezoid .title {\r\n  line-height: 60rpx;\r\n  font-size: 36rpx;\r\n  padding-left: 15rpx;\n}\n.photo-transfer .trapezoid .title-bold {\r\n  line-height: 60rpx;\r\n  font-size: 36rpx;\r\n  padding-left: 15rpx;\r\n  font-weight: bold;\n}\n.photo-transfer .component-columns {\r\n  position: absolute;\r\n  top: 55%;\r\n  width: 100%;\r\n  height: 1000rpx;\r\n  border-radius: 30rpx;\r\n  background: #F8F8F8;\n}\n.photo-transfer .component-columns .components {\r\n  width: 100%;\r\n  height: 500rpx;\r\n  text-align: center;\r\n  font-size: 40rpx;\r\n  line-height: 300rpx;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.person-background {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\n}\n.photo-collection .pic-box {\r\n  position: absolute;\r\n  width: 600rpx;\r\n  height: 700rpx;\r\n  left: 75rpx;\r\n  top: 250rpx;\r\n  background-color: #D9D9D9;\n}\n.photo-collection .title {\r\n  position: absolute;\r\n  text-align: center;\r\n  font-weight: bold;\r\n  color: #FFFFFF;\r\n  font-size: 60rpx;\r\n  top: 7%;\r\n  width: 500rpx;\r\n  left: 125rpx;\n}\n.photo-collection .button {\r\n  position: absolute;\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  left: 315rpx;\r\n  bottom: 200rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-collection .button .icon {\r\n  left: 20rpx;\r\n  top: 20rpx;\r\n  width: 80rpx;\r\n  height: 80rpx;\n}\n.photo-transfer .msg-text {\r\n  position: absolute;\r\n  text-align: center;\r\n  font-weight: bold;\r\n  font-size: 50rpx;\r\n  top: 8%;\r\n  width: 550rpx;\r\n  left: 100rpx;\r\n  color: #FFFFFF;\n}\n.photo-transfer .pic-box {\r\n  position: absolute;\r\n  width: 600rpx;\r\n  height: 800rpx;\r\n  left: 75rpx;\r\n  top: 230rpx;\r\n  background: white;\r\n  border-radius: 30rpx;\n}\n.photo-transfer .pic-box .picture {\r\n  width: 600rpx;\r\n  height: 850rpx;\n}\n.photo-transfer .next-button {\r\n  position: absolute;\r\n  width: 200rpx;\r\n  height: 100rpx;\r\n  left: 150rpx;\r\n  bottom: 175rpx;\r\n  text-align: center;\r\n  line-height: 100rpx;\r\n  font-size: 40rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-transfer .cancel-button {\r\n  position: absolute;\r\n  width: 200rpx;\r\n  height: 100rpx;\r\n  left: 400rpx;\r\n  bottom: 175rpx;\r\n  text-align: center;\r\n  line-height: 100rpx;\r\n  font-size: 40rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-transfer .adopt-button {\r\n  position: absolute;\r\n  width: 200rpx;\r\n  height: 100rpx;\r\n  left: 275rpx;\r\n  bottom: 175rpx;\r\n  text-align: center;\r\n  line-height: 100rpx;\r\n  font-size: 40rpx;\r\n  background: #FFFFFF;\r\n  box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);\r\n  border-radius: 15px;\n}\n.photo-transfer .next-view {\r\n  position: absolute;\r\n  right: 0rpx;\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  z-index: 10;\n}\n.photo-transfer .next-view .icon-next {\r\n  position: absolute;\r\n  right: 30rpx;\r\n  top: 50rpx;\r\n  width: 60rpx;\r\n  height: 60rpx;\n}\n.photo-transfer .next-view .icon-next .full-view {\r\n  height: 100%;\r\n  width: 100%;\n}\n.photo-transfer .back-view {\r\n  position: absolute;\r\n  left: 0rpx;\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  z-index: 10;\n}\n.photo-transfer .back-view .icon-back {\r\n  position: absolute;\r\n  left: 30rpx;\r\n  top: 50rpx;\r\n  width: 60rpx;\r\n  height: 60rpx;\n}\n.photo-transfer .back-view .icon-back .full-view {\r\n  height: 100%;\r\n  width: 100%;\n}\n.photo-transfer .online-display {\r\n  position: absolute;\r\n  top: 30rpx;\r\n  width: 100%;\r\n  height: 45%;\n}\n.photo-transfer .online-display .overall-display {\r\n  display: block;\r\n  margin: 0 auto;\r\n  padding-right: 30rpx;\r\n  width: 450rpx;\r\n  height: 700rpx;\n}\n.photo-transfer .trapezoid {\r\n  position: absolute;\r\n  bottom: 45%;\r\n  left: 45rpx;\r\n  width: 105rpx;\r\n  height: 0rpx;\r\n  border-bottom: 60rpx solid;\r\n  border-left: 30rpx solid;\r\n  border-right: 30rpx solid;\r\n  border-color: transparent transparent #F0F0F0 transparent;\n}\n.photo-transfer .trapezoid .title {\r\n  line-height: 60rpx;\r\n  font-size: 36rpx;\r\n  padding-left: 15rpx;\n}\n.photo-transfer .trapezoid .title-bold {\r\n  line-height: 60rpx;\r\n  font-size: 36rpx;\r\n  padding-left: 15rpx;\r\n  font-weight: bold;\n}\n.photo-transfer .component-columns {\r\n  position: absolute;\r\n  top: 55%;\r\n  width: 100%;\r\n  height: 45%;\r\n  border-top-left-radius: 30rpx;\r\n  border-top-right-radius: 30rpx;\r\n  background: #F8F8F8;\n}\n.photo-transfer .component-columns .components {\r\n  width: 100%;\r\n  height: 500rpx;\r\n  text-align: center;\r\n  font-size: 40rpx;\r\n  line-height: 300rpx;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
