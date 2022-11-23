@@ -125,6 +125,12 @@
 				-->
 				<image class="picture" src="../../static/testchara.png"></image>
 			</view>
+			<view class="next-button" @click="photo_retake()">
+				重新拍照
+			</view>
+			<view class="cancel-button" @click="modify_component()">
+				更换配件
+			</view>
 		</view>
 	</view>
 </template>
@@ -210,6 +216,7 @@
 			},
 			photo_retake() {
 				this.step = 0;
+				console.log('step', this.step);
 			},
 			next_step() {
 				this.step = this.step + 1;
@@ -223,6 +230,10 @@
 				uni.navigateTo({
 				    url: "../room/sleeproom"
 				});
+			},
+			modify_component() {
+				this.step = 2;
+				console.log('step', this.step);
 			},
 			change_component_column(column_num) {
 				this.componentColumn = column_num;
@@ -329,7 +340,7 @@
 		text-align: center;
 		line-height: 100rpx;
 		font-size: 40rpx;
-			
+		
 		background: #FFFFFF;
 		box-shadow: 0rpx 0rpx 20rpx rgba(0, 0, 0, 0.3);
 		border-radius: 15px;
@@ -356,7 +367,8 @@
 		right: 0rpx;
 		width: 120rpx;
 		height: 120rpx;
-		background: #D9D9D9;	
+		z-index: 10;
+		// background: #D9D9D9;	
 		
 		.icon-next {
 			position: absolute;
@@ -376,7 +388,8 @@
 		left: 0rpx;
 		width: 120rpx;
 		height: 120rpx;
-		background: #D9D9D9;
+		z-index: 10;
+		// background: #D9D9D9;
 		
 		.icon-back {
 			position: absolute;
@@ -384,7 +397,6 @@
 			top: 50rpx;
 			width: 60rpx;
 			height: 60rpx;
-			background: #D9D9D9;
 			.full-view {
 				height: 100%;
 				width: 100%;
@@ -435,8 +447,9 @@
 		position: absolute;
 		top: 55%;
 		width: 100%;
-		height: 1000rpx;
-		border-radius: 30rpx;
+		height: 45%;
+		border-top-left-radius: 30rpx;
+		border-top-right-radius: 30rpx;
 		background: #F8F8F8;
 		.components {
 			width: 100%;
