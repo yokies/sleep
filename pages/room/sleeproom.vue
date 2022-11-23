@@ -18,6 +18,11 @@
             </view>
         </view>
         
+        <view v-if='sleeping' class="bed-button-1">
+            <view style='font-size: 20px; font-weight: 500;'>
+                {{timeFormat(sleepTime)}}
+            </view>
+        </view>
         <view v-if='sleeping' class="bed-button" @click="wakeup()">
             <view style='font-size: 20px; font-weight: 500;'>
                 起床
@@ -54,6 +59,12 @@
                 style = 'position: absolute;'
                 :style='{left:calleft(bed.id), top:caltop(bed.id)}'>
             <image :src='sleepImage' class='sleep-man'></image>
+            <view v-if='showId==bed.id' class="sleep-chat-box">
+                <view class='text-box'>
+                    <text>你在这里</text>
+                </view>
+                <view class="triangle"></view>
+            </view>
         </view>
     </view>
 </template>
@@ -80,7 +91,10 @@
                     {id: 6, canchoose: true},
                     {id: 7, canchoose: true},
                     {id: 8, canchoose: false}
-                ]
+                ],
+                timer:'',
+                sleepTime: 0,
+                showId: 0,
             }
         },
         methods:{
@@ -103,11 +117,36 @@
                 this.sleepBedId = this.chosedBedId
                 this.bedbox = !this.bedbox
                 this.sleeping = true
+                this.timer = setInterval(()=>{
+                    let that = this
+                	this.sleepTime++
+                }, 1000)
+                this.showId = this.sleepBedId
+                setTimeout(()=>{
+                    this.showId = 0
+                }, 2000)
             },
             wakeup(){
                 this.chosedBedId = 0
                 this.sleepBedId = 0
                 this.sleeping = false
+                this.sleepTime = 0
+                clearInterval(this.timer)
+            },
+            timeFormat(time){
+                let hours = Math.floor(time / 3600)
+                if (hours < 10){
+                    hours = '0' + hours
+                }
+                let minutes = Math.floor(time / 60)
+                if (minutes < 10){
+                    minutes = '0' + minutes
+                }
+                let seconds = time % 60
+                if (seconds < 10){
+                    seconds = '0' + seconds
+                }
+                return hours + ':' + minutes + ':' + seconds
             },
             calleft(id){
                 return 14.5 + 29 * ((id - 1) % 2) + '%'
@@ -143,6 +182,12 @@
         left: 181px;
         top: 300px;
     },
+    .sleep-chat-box{
+        width: 130%;
+        position: absolute;
+        top: -30%;
+        left: -5%;
+    },
     .chat-box{
         width: 100%;
     },
@@ -168,6 +213,20 @@
     .character{
         width: 74px;
         height: 112px;
+    },
+    .bed-button-1{
+        z-index: 3;
+        position: absolute;
+        background-color: #FFFFFF;
+        width: 40%;
+        height: 8%;
+        bottom: 20%;
+        left: 30%;
+        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     },
     .bed-button{
         z-index: 3;
